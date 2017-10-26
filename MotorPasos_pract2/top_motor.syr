@@ -1,0 +1,559 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: top_motor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_motor.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_motor"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : top_motor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : LUT
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/timer1seg.vhd" in Library work.
+Architecture behavioral of Entity timer1seg is up to date.
+Compiling vhdl file "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/timer_medio_seg .vhd" in Library work.
+Architecture behavioral of Entity timer_medio_seg is up to date.
+Compiling vhdl file "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/motor.vhd" in Library work.
+Architecture behavioral of Entity motor is up to date.
+Compiling vhdl file "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.vhd" in Library work.
+Architecture behavioral of Entity top_motor is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top_motor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <timer1seg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <timer_medio_seg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <motor> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top_motor> in library <work> (Architecture <behavioral>).
+Entity <top_motor> analyzed. Unit <top_motor> generated.
+
+Analyzing Entity <timer1seg> in library <work> (Architecture <behavioral>).
+Entity <timer1seg> analyzed. Unit <timer1seg> generated.
+
+Analyzing Entity <timer_medio_seg> in library <work> (Architecture <behavioral>).
+Entity <timer_medio_seg> analyzed. Unit <timer_medio_seg> generated.
+
+Analyzing Entity <motor> in library <work> (Architecture <behavioral>).
+Entity <motor> analyzed. Unit <motor> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <timer1seg>.
+    Related source file is "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/timer1seg.vhd".
+    Found 1-bit register for signal <clk1s>.
+    Found 32-bit up counter for signal <cuenta>.
+    Found 1-bit register for signal <i_clk>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <timer1seg> synthesized.
+
+
+Synthesizing Unit <timer_medio_seg>.
+    Related source file is "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/timer_medio_seg .vhd".
+    Found 1-bit register for signal <clkms>.
+    Found 32-bit up counter for signal <cuenta>.
+    Found 1-bit register for signal <i_clk>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <timer_medio_seg> synthesized.
+
+
+Synthesizing Unit <motor>.
+    Related source file is "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/motor.vhd".
+    Found finite state machine <FSM_0> for signal <actual>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | a                                              |
+    | Power Up State     | a                                              |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <motor> synthesized.
+
+
+Synthesizing Unit <top_motor>.
+    Related source file is "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.vhd".
+Unit <top_motor> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 4
+ 1-bit register                                        : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <CI3/actual/FSM> on signal <actual[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ a     | 00
+ b     | 01
+ c     | 11
+ d     | 10
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top_motor> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_motor, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top_motor.ngr
+Top Level Output File Name         : top_motor
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 298
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 62
+#      LUT2                        : 68
+#      LUT3                        : 1
+#      LUT4                        : 18
+#      MUXCY                       : 78
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 70
+#      FDC                         : 68
+#      FDE                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 8
+#      IBUF                        : 4
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       83  out of   4656     1%  
+ Number of Slice Flip Flops:             70  out of   9312     0%  
+ Number of 4 input LUTs:                154  out of   9312     1%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    232     3%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)       | Load  |
+-----------------------------------+-----------------------------+-------+
+CI1/i_clk                          | NONE(CI1/clk1s)             | 1     |
+clk50MHz                           | BUFGP                       | 66    |
+CI2/i_clk                          | NONE(CI2/clkms)             | 1     |
+alclk(alclk1:O)                    | NONE(*)(CI3/actual_FSM_FFd1)| 2     |
+-----------------------------------+-----------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 68    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.407ns (Maximum Frequency: 156.079MHz)
+   Minimum input arrival time before clock: 4.198ns
+   Maximum output required time after clock: 5.831ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CI1/i_clk'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            CI1/clk1s (FF)
+  Destination:       CI1/clk1s (FF)
+  Source Clock:      CI1/i_clk rising
+  Destination Clock: CI1/i_clk rising
+
+  Data Path: CI1/clk1s to CI1/clk1s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.447  CI1/clk1s (CI1/clk1s)
+     INV:I->O              1   0.704   0.420  CI1/clk1s_not00011_INV_0 (CI1/clk1s_not0001)
+     FDC:D                     0.308          CI1/clk1s
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk50MHz'
+  Clock period: 6.407ns (frequency: 156.079MHz)
+  Total number of paths / destination ports: 3168 / 66
+-------------------------------------------------------------------------
+Delay:               6.407ns (Levels of Logic = 33)
+  Source:            CI1/cuenta_1 (FF)
+  Destination:       CI1/cuenta_31 (FF)
+  Source Clock:      clk50MHz rising
+  Destination Clock: clk50MHz rising
+
+  Data Path: CI1/cuenta_1 to CI1/cuenta_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  CI1/cuenta_1 (CI1/cuenta_1)
+     LUT1:I0->O            1   0.704   0.000  CI1/Mcount_cuenta_cy<1>_rt (CI1/Mcount_cuenta_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  CI1/Mcount_cuenta_cy<1> (CI1/Mcount_cuenta_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<2> (CI1/Mcount_cuenta_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<3> (CI1/Mcount_cuenta_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<4> (CI1/Mcount_cuenta_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<5> (CI1/Mcount_cuenta_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<6> (CI1/Mcount_cuenta_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<7> (CI1/Mcount_cuenta_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<8> (CI1/Mcount_cuenta_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<9> (CI1/Mcount_cuenta_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<10> (CI1/Mcount_cuenta_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<11> (CI1/Mcount_cuenta_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<12> (CI1/Mcount_cuenta_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<13> (CI1/Mcount_cuenta_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<14> (CI1/Mcount_cuenta_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<15> (CI1/Mcount_cuenta_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<16> (CI1/Mcount_cuenta_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<17> (CI1/Mcount_cuenta_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<18> (CI1/Mcount_cuenta_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<19> (CI1/Mcount_cuenta_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<20> (CI1/Mcount_cuenta_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<21> (CI1/Mcount_cuenta_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<22> (CI1/Mcount_cuenta_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<23> (CI1/Mcount_cuenta_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<24> (CI1/Mcount_cuenta_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<25> (CI1/Mcount_cuenta_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<26> (CI1/Mcount_cuenta_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<27> (CI1/Mcount_cuenta_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<28> (CI1/Mcount_cuenta_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  CI1/Mcount_cuenta_cy<29> (CI1/Mcount_cuenta_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  CI1/Mcount_cuenta_cy<30> (CI1/Mcount_cuenta_cy<30>)
+     XORCY:CI->O           1   0.804   0.499  CI1/Mcount_cuenta_xor<31> (Result<31>)
+     LUT2:I1->O            1   0.704   0.000  CI1/Mcount_cuenta_eqn_311 (CI1/Mcount_cuenta_eqn_31)
+     FDC:D                     0.308          CI1/cuenta_31
+    ----------------------------------------
+    Total                      6.407ns (5.286ns logic, 1.121ns route)
+                                       (82.5% logic, 17.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CI2/i_clk'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            CI2/clkms (FF)
+  Destination:       CI2/clkms (FF)
+  Source Clock:      CI2/i_clk rising
+  Destination Clock: CI2/i_clk rising
+
+  Data Path: CI2/clkms to CI2/clkms
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.447  CI2/clkms (CI2/clkms)
+     INV:I->O              1   0.704   0.420  CI2/clkms_not00011_INV_0 (CI2/clkms_not0001)
+     FDC:D                     0.308          CI2/clkms
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'alclk'
+  Clock period: 2.447ns (frequency: 408.664MHz)
+  Total number of paths / destination ports: 4 / 2
+-------------------------------------------------------------------------
+Delay:               2.447ns (Levels of Logic = 1)
+  Source:            CI3/actual_FSM_FFd1 (FF)
+  Destination:       CI3/actual_FSM_FFd1 (FF)
+  Source Clock:      alclk rising
+  Destination Clock: alclk rising
+
+  Data Path: CI3/actual_FSM_FFd1 to CI3/actual_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.591   0.844  CI3/actual_FSM_FFd1 (CI3/actual_FSM_FFd1)
+     LUT4:I0->O            1   0.704   0.000  CI3/actual_FSM_FFd1-In1 (CI3/actual_FSM_FFd1-In)
+     FDC:D                     0.308          CI3/actual_FSM_FFd1
+    ----------------------------------------
+    Total                      2.447ns (1.603ns logic, 0.844ns route)
+                                       (65.5% logic, 34.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk50MHz'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.198ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       CI1/i_clk (FF)
+  Destination Clock: clk50MHz rising
+
+  Data Path: reset to CI1/i_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            69   1.218   1.274  reset_IBUF (reset_IBUF)
+     INV:I->O              2   0.704   0.447  CI1/rst_inv1_INV_0 (CI1/rst_inv)
+     FDE:CE                    0.555          CI1/i_clk
+    ----------------------------------------
+    Total                      4.198ns (2.477ns logic, 1.721ns route)
+                                       (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'alclk'
+  Total number of paths / destination ports: 4 / 2
+-------------------------------------------------------------------------
+Offset:              2.756ns (Levels of Logic = 2)
+  Source:            modo_m<1> (PAD)
+  Destination:       CI3/actual_FSM_FFd1 (FF)
+  Destination Clock: alclk rising
+
+  Data Path: modo_m<1> to CI3/actual_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.526  modo_m_1_IBUF (modo_m_1_IBUF)
+     LUT4:I1->O            1   0.704   0.000  CI3/actual_FSM_FFd1-In1 (CI3/actual_FSM_FFd1-In)
+     FDC:D                     0.308          CI3/actual_FSM_FFd1
+    ----------------------------------------
+    Total                      2.756ns (2.230ns logic, 0.526ns route)
+                                       (80.9% logic, 19.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'alclk'
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Offset:              5.831ns (Levels of Logic = 2)
+  Source:            CI3/actual_FSM_FFd2 (FF)
+  Destination:       MotorPasos<3> (PAD)
+  Source Clock:      alclk rising
+
+  Data Path: CI3/actual_FSM_FFd2 to MotorPasos<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.591   0.844  CI3/actual_FSM_FFd2 (CI3/actual_FSM_FFd2)
+     LUT2:I0->O            1   0.704   0.420  CI3/actual_FSM_Out31 (MotorPasos_0_OBUF)
+     OBUF:I->O                 3.272          MotorPasos_0_OBUF (MotorPasos<0>)
+    ----------------------------------------
+    Total                      5.831ns (4.567ns logic, 1.264ns route)
+                                       (78.3% logic, 21.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.92 secs
+ 
+--> 
+
+Total memory usage is 251684 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

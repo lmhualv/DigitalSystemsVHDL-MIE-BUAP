@@ -1,0 +1,7 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = V10;
+NET "clk1s" LOC = U16;
+NET "rst" LOC = B8;
+NET "rst" CLOCK_DEDICATED_ROUTE = FALSE; 

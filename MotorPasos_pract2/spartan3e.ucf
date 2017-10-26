@@ -1,0 +1,50 @@
+#####################################################
+### SPARTAN-3E STARTER KIT BOARD CONSTRAINTS FILE
+#####################################################
+
+# ==== Pushbuttons (BTN) ====
+NET "reset" LOC = H13;
+NET "reset" IOSTANDARD = LVTTL;
+NET "reset" PULLDOWN;
+
+# ==== Clock inputs (CLK) ====
+NET "clk50MHz" LOC = C9;
+NET "clk50MHz" IOSTANDARD = LVCMOS33;
+# Define clock period for 50 MHz oscillator (40%/60% duty-cycle)
+NET "clk50MHz" PERIOD = 20 ns HIGH 40 %;
+
+# ==== Discrete LEDs (LED) ====
+# These are shared connections with the FX2 connector
+NET "MotorPasos[0]" LOC = F12;
+NET "MotorPasos[0]" IOSTANDARD = LVTTL;
+NET "MotorPasos[0]" DRIVE = 8;
+NET "MotorPasos[0]" SLEW = SLOW;
+NET "MotorPasos[1]" LOC = E12;
+NET "MotorPasos[1]" IOSTANDARD = LVTTL;
+NET "MotorPasos[1]" DRIVE = 8;
+NET "MotorPasos[1]" SLEW = SLOW;
+NET "MotorPasos[2]" LOC = E11;
+NET "MotorPasos[2]" IOSTANDARD = LVTTL;
+NET "MotorPasos[2]" DRIVE = 8;
+NET "MotorPasos[2]" SLEW = SLOW;
+NET "MotorPasos[3]" LOC = F11;
+NET "MotorPasos[3]" IOSTANDARD = LVTTL;
+NET "MotorPasos[3]" DRIVE = 8;
+NET "MotorPasos[3]" SLEW = SLOW;
+
+# ==== Slide Switches (SW) ====
+NET "modo_m[0]" LOC = L13;
+NET "modo_m[0]" IOSTANDARD = LVTTL;
+NET "modo_m[0]" PULLUP;
+NET "modo_m[1]" LOC = L14;
+NET "modo_m[1]" IOSTANDARD = LVTTL;
+NET "modo_m[1]" PULLUP;
+
+# PlanAhead Generated physical constraints 
+
+NET "modo_m[2]" LOC = H18;
+
+# PlanAhead Generated IO constraints 
+
+NET "modo_m[2]" IOSTANDARD = LVTTL;
+NET "modo_m[2]" PULLUP;

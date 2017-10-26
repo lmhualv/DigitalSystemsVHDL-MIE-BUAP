@@ -1,0 +1,353 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: comp_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "comp_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "comp_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : comp_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\SisDig\ALU_Display_ISE\Deco_BCD_7seg_when.vhd" into library work
+Parsing entity <DecoBCD_7seg_when>.
+Parsing architecture <comportamiento> of entity <decobcd_7seg_when>.
+Parsing VHDL file "C:\SisDig\ALU_Display_ISE\ALU_4x4.vhd" into library work
+Parsing entity <ALU_4x4>.
+Parsing architecture <Behavioral> of entity <alu_4x4>.
+Parsing VHDL file "C:\SisDig\ALU_Display_ISE\comp_top.vhd" into library work
+Parsing entity <comp_top>.
+Parsing architecture <Behavioral> of entity <comp_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <comp_top> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU_4x4> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\SisDig\ALU_Display_ISE\ALU_4x4.vhd" Line 35: b should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\SisDig\ALU_Display_ISE\ALU_4x4.vhd" Line 37: a should be on the sensitivity list of the process
+
+Elaborating entity <DecoBCD_7seg_when> (architecture <comportamiento>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <comp_top>.
+    Related source file is "C:\SisDig\ALU_Display_ISE\comp_top.vhd".
+INFO:Xst:3210 - "C:\SisDig\ALU_Display_ISE\comp_top.vhd" line 38: Output port <cout> of the instance <CI1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <comp_top> synthesized.
+
+Synthesizing Unit <ALU_4x4>.
+    Related source file is "C:\SisDig\ALU_Display_ISE\ALU_4x4.vhd".
+    Found 5-bit adder for signal <ai[4]_bi[4]_add_4_OUT> created at line 33.
+    Found 5-bit subtractor for signal <GND_6_o_GND_6_o_sub_7_OUT<4:0>> created at line 35.
+    Found 5-bit 4-to-1 multiplexer for signal <ri> created at line 24.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <ALU_4x4> synthesized.
+
+Synthesizing Unit <DecoBCD_7seg_when>.
+    Related source file is "C:\SisDig\ALU_Display_ISE\Deco_BCD_7seg_when.vhd".
+    Found 16x8-bit Read Only RAM for signal <segmentos>
+    Summary:
+	inferred   1 RAM(s).
+Unit <DecoBCD_7seg_when> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 1
+ 5-bit addsub                                          : 1
+# Multiplexers                                         : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <DecoBCD_7seg_when>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segmentos> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <dato>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segmentos>     |          |
+    -----------------------------------------------------------------------
+Unit <DecoBCD_7seg_when> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 1
+ 5-bit addsub                                          : 1
+# Multiplexers                                         : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <comp_top> ...
+
+Optimizing unit <ALU_4x4> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block comp_top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : comp_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 15
+#      GND                         : 1
+#      LUT4                        : 9
+#      LUT5                        : 3
+#      LUT6                        : 1
+#      VCC                         : 1
+# IO Buffers                       : 22
+#      IBUF                        : 10
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   13  out of   9112     0%  
+    Number used as Logic:                13  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     13
+   Number with an unused Flip Flop:      13  out of     13   100%  
+   Number with an unused LUT:             0  out of     13     0%  
+   Number of fully used LUT-FF pairs:     0  out of     13     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    232     9%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 8.380ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 217 / 7
+-------------------------------------------------------------------------
+Delay:               8.380ns (Levels of Logic = 6)
+  Source:            op_top<0> (PAD)
+  Destination:       seg_m<5> (PAD)
+
+  Data Path: op_top<0> to seg_m<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   0.973  op_top_0_IBUF (op_top_0_IBUF)
+     LUT5:I2->O            2   0.205   0.617  CI1/Mmux_ri1_rs_cy<1>11 (CI1/Mmux_ri1_rs_cy<1>)
+     LUT4:I3->O            1   0.205   0.580  CI1/Mmux_ri1_rs_cy<2>11 (CI1/Mmux_ri1_rs_cy<2>)
+     LUT5:I4->O            7   0.205   1.021  CI1/Mmux_ri341 (cable_datos<3>)
+     LUT4:I0->O            1   0.203   0.579  CI2/Mram_segmentos51 (seg_m_5_OBUF)
+     OBUF:I->O                 2.571          seg_m_5_OBUF (seg_m<5>)
+    ----------------------------------------
+    Total                      8.380ns (4.611ns logic, 3.769ns route)
+                                       (55.0% logic, 45.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.94 secs
+ 
+--> 
+
+Total memory usage is 223988 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

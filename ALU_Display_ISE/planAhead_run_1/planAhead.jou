@@ -1,0 +1,89 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Oct 07 11:42:18 2017
+# Process ID: 3396
+# Log file: C:/SisDig/ALU_Display_ISE/planAhead_run_1/planAhead.log
+# Journal file: C:/SisDig/ALU_Display_ISE/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/SisDig/ALU_Display_ISE/pa.fromNetlist.tcl
+startgroup
+set_property package_pin T5 [get_ports {a_top[3]}]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports {a_top[2]}]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports {a_top[1]}]
+endgroup
+startgroup
+set_property package_pin N8 [get_ports {a_top[0]}]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports {an[3]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {an[2]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {an[1]}]
+endgroup
+startgroup
+set_property package_pin N16 [get_ports {an[3]}]
+endgroup
+startgroup
+set_property package_pin N15 [get_ports {an[2]}]
+endgroup
+startgroup
+set_property package_pin P18 [get_ports {an[1]}]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports {an[0]}]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports {b_top[3]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {b_top[2]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {b_top[1]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {b_top[1]}]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports {b_top[0]}]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports {op_top[1]}]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports {op_top[0]}]
+endgroup
+startgroup
+set_property package_pin T17 [get_ports {seg_m[7]}]
+endgroup
+startgroup
+set_property package_pin T18 [get_ports {seg_m[6]}]
+endgroup
+startgroup
+set_property package_pin U17 [get_ports {seg_m[5]}]
+endgroup
+startgroup
+set_property package_pin U18 [get_ports {seg_m[4]}]
+endgroup
+startgroup
+set_property package_pin M14 [get_ports {seg_m[3]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {seg_m[2]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {seg_m[1]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {seg_m[0]}]
+endgroup
+save_constraints

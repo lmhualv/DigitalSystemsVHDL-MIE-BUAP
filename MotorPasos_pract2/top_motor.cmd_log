@@ -1,0 +1,65 @@
+xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.syr" 
+xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.syr" 
+xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.syr" 
+xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.syr" 
+xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.syr" 
+xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.syr" 
+xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.syr" 
+xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.syr" 
+xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timer1seg.ucf -p xc6slx16-csg324-3 "top_motor.ngc" top_motor.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_motor_map.ncd top_motor.ngd top_motor.pcf 
+par -w -intstyle ise -ol high -mt off top_motor_map.ncd top_motor.ncd top_motor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_motor.twx top_motor.ncd -o top_motor.twr top_motor.pcf -ucf timer1seg.ucf 
+bitgen -intstyle ise -f top_motor.ut top_motor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timer1seg.ucf -p xc6slx16-csg324-3 "top_motor.ngc" top_motor.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_motor_map.ncd top_motor.ngd top_motor.pcf 
+par -w -intstyle ise -ol high -mt off top_motor_map.ncd top_motor.ncd top_motor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_motor.twx top_motor.ncd -o top_motor.twr top_motor.pcf -ucf timer1seg.ucf 
+bitgen -intstyle ise -f top_motor.ut top_motor.ncd 
+xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timer1seg.ucf -p xc3s500e-fg320-4 "top_motor.ngc" top_motor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o top_motor_map.ncd top_motor.ngd top_motor.pcf 
+par -w -intstyle ise -ol high -t 1 top_motor_map.ncd top_motor.ncd top_motor.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timer1seg.ucf -p xc3s500e-fg320-4 "top_motor.ngc" top_motor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o top_motor_map.ncd top_motor.ngd top_motor.pcf 
+par -w -intstyle ise -ol high -t 1 top_motor_map.ncd top_motor.ncd top_motor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_motor.twx top_motor.ncd -o top_motor.twr top_motor.pcf -ucf timer1seg.ucf 
+bitgen -intstyle ise -f top_motor.ut top_motor.ncd 
+xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timer1seg.ucf -p xc3s500e-fg320-4 "top_motor.ngc" top_motor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o top_motor_map.ncd top_motor.ngd top_motor.pcf 
+par -w -intstyle ise -ol high -t 1 top_motor_map.ncd top_motor.ncd top_motor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_motor.twx top_motor.ncd -o top_motor.twr top_motor.pcf -ucf timer1seg.ucf 
+bitgen -intstyle ise -f top_motor.ut top_motor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timer1seg.ucf -p xc3s500e-fg320-4 "top_motor.ngc" top_motor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o top_motor_map.ncd top_motor.ngd top_motor.pcf 
+par -w -intstyle ise -ol high -t 1 top_motor_map.ncd top_motor.ncd top_motor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_motor.twx top_motor.ncd -o top_motor.twr top_motor.pcf -ucf timer1seg.ucf 
+bitgen -intstyle ise -f top_motor.ut top_motor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timer1seg.ucf -p xc3s500e-fg320-4 "top_motor.ngc" top_motor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o top_motor_map.ncd top_motor.ngd top_motor.pcf 
+par -w -intstyle ise -ol high -t 1 top_motor_map.ncd top_motor.ncd top_motor.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timer1seg.ucf -p xc3s500e-fg320-4 "top_motor.ngc" top_motor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o top_motor_map.ncd top_motor.ngd top_motor.pcf 
+par -w -intstyle ise -ol high -t 1 top_motor_map.ncd top_motor.ncd top_motor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_motor.twx top_motor.ncd -o top_motor.twr top_motor.pcf -ucf timer1seg.ucf 
+bitgen -intstyle ise -f top_motor.ut top_motor.ncd 
+bitgen -intstyle ise -f top_motor.ut top_motor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "top_motor.ngc" top_motor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o top_motor_map.ncd top_motor.ngd top_motor.pcf 
+par -w -intstyle ise -ol high -t 1 top_motor_map.ncd top_motor.ncd top_motor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_motor.twx top_motor.ncd -o top_motor.twr top_motor.pcf 
+bitgen -intstyle ise -f top_motor.ut top_motor.ncd 
+xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 "top_motor.ngc" top_motor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o top_motor_map.ncd top_motor.ngd top_motor.pcf 
+par -w -intstyle ise -ol high -t 1 top_motor_map.ncd top_motor.ncd top_motor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_motor.twx top_motor.ncd -o top_motor.twr top_motor.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f top_motor.ut top_motor.ncd 
+xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotorPasos_pract2/top_motor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 "top_motor.ngc" top_motor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o top_motor_map.ncd top_motor.ngd top_motor.pcf 
+par -w -intstyle ise -ol high -t 1 top_motor_map.ncd top_motor.ncd top_motor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_motor.twx top_motor.ncd -o top_motor.twr top_motor.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f top_motor.ut top_motor.ncd 

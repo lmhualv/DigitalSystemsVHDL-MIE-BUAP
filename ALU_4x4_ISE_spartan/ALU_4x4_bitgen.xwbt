@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\SisDig\ALU_4x4_ISE_spartan\ALU_4x4.ncd
+OUTFILE=C:\SisDig\ALU_4x4_ISE_spartan\ALU_4x4.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\SisDig\ALU_4x4_ISE_spartan
+LICENSE=WebPack
+USER_INFO=__0_0_0

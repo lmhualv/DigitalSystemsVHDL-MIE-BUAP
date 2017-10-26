@@ -1,0 +1,21 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity decoBCD_7s is
+
+
+	port 
+	(
+
+	);
+
+end entity;
+
+architecture comportamiento of decoBCD_7s is
+
+
+begin
+
+
+end comportamiento;

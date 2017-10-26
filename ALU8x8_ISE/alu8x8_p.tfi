@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+alu8x8_p instance_name (
+    .a(a), 
+    .b(b), 
+    .cin(cin), 
+    .op(op), 
+    .res(res)
+    );
+
+

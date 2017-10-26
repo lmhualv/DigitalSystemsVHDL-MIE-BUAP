@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/SisDig/Cont_1Hz_ISE/timer1seg.xst" -ofn "C:/SisDig/Cont_1Hz_ISE/timer1seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 timer1seg.ngc timer1seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o timer1seg_map.ncd timer1seg.ngd timer1seg.pcf 
+xst -intstyle ise -ifn "C:/SisDig/Cont_1Hz_ISE/timer1seg.xst" -ofn "C:/SisDig/Cont_1Hz_ISE/timer1seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-2 timer1seg.ngc timer1seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o timer1seg_map.ncd timer1seg.ngd timer1seg.pcf 
+xst -intstyle ise -ifn "C:/SisDig/Cont_1Hz_ISE/timer1seg.xst" -ofn "C:/SisDig/Cont_1Hz_ISE/timer1seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timer1seg.ucf -p xc6slx16-csg324-3 timer1seg.ngc timer1seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o timer1seg_map.ncd timer1seg.ngd timer1seg.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc timer1seg.ucf -p xc6slx16-csg324-3 timer1seg.ngc timer1seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o timer1seg_map.ncd timer1seg.ngd timer1seg.pcf 
+par -w -intstyle ise -ol high -mt off timer1seg_map.ncd timer1seg.ncd timer1seg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml timer1seg.twx timer1seg.ncd -o timer1seg.twr timer1seg.pcf -ucf timer1seg.ucf 
+bitgen -intstyle ise -f timer1seg.ut timer1seg.ncd 

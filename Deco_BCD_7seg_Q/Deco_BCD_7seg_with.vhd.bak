@@ -1,0 +1,22 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity DecoBCD_7seg_with is
+	port 
+	(
+	dato: IN std_logic_vector(3 downto 0);
+	segmentos: OUT std_logic_vector(7 downto 0)
+	);
+
+end DecoBCD_7seg;
+
+architecture comportamiento of DecoBCD_7seg_with is
+
+
+
+begin
+
+					 
+
+end comportamiento;

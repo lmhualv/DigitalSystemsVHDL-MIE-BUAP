@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/SisDig/ALU_4x4_ISE/ALU_4x4.xst" -ofn "C:/SisDig/ALU_4x4_ISE/ALU_4x4.syr" 
+xst -intstyle ise -ifn "C:/SisDig/ALU_4x4_ISE/ALU_4x4.xst" -ofn "C:/SisDig/ALU_4x4_ISE/ALU_4x4.syr" 
+xst -intstyle ise -ifn "C:/SisDig/ALU_4x4_ISE/ALU_4x4.xst" -ofn "C:/SisDig/ALU_4x4_ISE/ALU_4x4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_4x4.ucf -p xc6slx16-csg324-3 ALU_4x4.ngc ALU_4x4.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_4x4_map.ncd ALU_4x4.ngd ALU_4x4.pcf 
+par -w -intstyle ise -ol high -mt off ALU_4x4_map.ncd ALU_4x4.ncd ALU_4x4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALU_4x4.twx ALU_4x4.ncd -o ALU_4x4.twr ALU_4x4.pcf -ucf ALU_4x4.ucf 
+bitgen -intstyle ise -f ALU_4x4.ut ALU_4x4.ncd 
+xst -intstyle ise -ifn "C:/SisDig/ALU_4x4_ISE_spartan/ALU_4x4.xst" -ofn "C:/SisDig/ALU_4x4_ISE_spartan/ALU_4x4.syr" 
+xst -intstyle ise -ifn "C:/SisDig/ALU_4x4_ISE_spartan/ALU_4x4.xst" -ofn "C:/SisDig/ALU_4x4_ISE_spartan/ALU_4x4.syr" 
+xst -intstyle ise -ifn "C:/SisDig/ALU_4x4_ISE_spartan/ALU_4x4.xst" -ofn "C:/SisDig/ALU_4x4_ISE_spartan/ALU_4x4.syr" 
+xst -intstyle ise -ifn "C:/SisDig/ALU_4x4_ISE_spartan/ALU_4x4.xst" -ofn "C:/SisDig/ALU_4x4_ISE_spartan/ALU_4x4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_4x4.ucf -p xc3s500e-fg320-4 ALU_4x4.ngc ALU_4x4.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ALU_4x4_map.ncd ALU_4x4.ngd ALU_4x4.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_4x4.ucf -p xc3s500e-fg320-4 ALU_4x4.ngc ALU_4x4.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ALU_4x4_map.ncd ALU_4x4.ngd ALU_4x4.pcf 
+par -w -intstyle ise -ol high -t 1 ALU_4x4_map.ncd ALU_4x4.ncd ALU_4x4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ALU_4x4.twx ALU_4x4.ncd -o ALU_4x4.twr ALU_4x4.pcf -ucf ALU_4x4.ucf 
+bitgen -intstyle ise -f ALU_4x4.ut ALU_4x4.ncd 

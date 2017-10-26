@@ -1,0 +1,29 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "a_top[3]" LOC = T5;
+NET "a_top[2]" LOC = V8;
+NET "a_top[1]" LOC = U8;
+NET "a_top[0]" LOC = N8;
+
+NET "b_top[3]" LOC = M8;
+NET "b_top[2]" LOC = V9;
+NET "b_top[1]" LOC = T9;
+NET "b_top[0]" LOC = T10;
+NET "op_top[1]" LOC = C4;
+NET "op_top[0]" LOC = B8;
+
+NET "an[3]" LOC = N16;
+NET "an[2]" LOC = N15;
+NET "an[1]" LOC = P18;
+NET "an[0]" LOC = P17;
+
+
+NET "seg_m[0]" LOC = T17;
+NET "seg_m[1]" LOC = T18;
+NET "seg_m[2]" LOC = U17;
+NET "seg_m[3]" LOC = U18;
+NET "seg_m[4]" LOC = M14;
+NET "seg_m[5]" LOC = N14;
+NET "seg_m[6]" LOC = L14;
+NET "seg_m[7]" LOC = M13;

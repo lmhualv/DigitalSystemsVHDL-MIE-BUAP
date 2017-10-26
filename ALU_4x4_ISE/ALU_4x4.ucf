@@ -1,0 +1,20 @@
+
+
+NET "op[1]" LOC = C4;
+NET "op[0]" LOC = B8;
+NET "a[3]" LOC = T5;
+NET "a[2]" LOC = V8;
+NET "a[1]" LOC = U8;
+NET "a[0]" LOC = N8;
+NET "b[3]" LOC = M8;
+NET "b[2]" LOC = V9;
+NET "b[1]" LOC = T9;
+NET "b[0]" LOC = T10;
+NET "res[3]" LOC = V15;
+NET "res[2]" LOC = U15;
+NET "res[1]" LOC = V16;
+NET "res[0]" LOC = U16;
+
+# PlanAhead Generated physical constraints 
+
+NET "cout" LOC = M11;

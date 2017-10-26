@@ -1,0 +1,8 @@
+V3 3
+FL "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/timer1seg_ISE/timer1seg.vhd" 2017/10/14.09:27:24 P.20131013
+EN work/timer1seg 1508988853 \
+      FL "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/timer1seg_ISE/timer1seg.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/timer1seg/Behavioral 1508988854 \
+      FL "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/timer1seg_ISE/timer1seg.vhd" \
+      EN work/timer1seg 1508988853

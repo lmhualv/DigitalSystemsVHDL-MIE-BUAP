@@ -1,0 +1,37 @@
+|demux1a2
+x[0] => sal2[0].DATAIN
+x[0] => sal1[0].DATAIN
+x[1] => sal2[1].DATAIN
+x[1] => sal1[1].DATAIN
+x[2] => sal2[2].DATAIN
+x[2] => sal1[2].DATAIN
+x[3] => sal2[3].DATAIN
+x[3] => sal1[3].DATAIN
+x[4] => sal2[4].DATAIN
+x[4] => sal1[4].DATAIN
+x[5] => sal2[5].DATAIN
+x[5] => sal1[5].DATAIN
+x[6] => sal2[6].DATAIN
+x[6] => sal1[6].DATAIN
+x[7] => sal2[7].DATAIN
+x[7] => sal1[7].DATAIN
+sel[0] => Equal0.IN1
+sel[1] => Equal0.IN0
+sal1[0] <= sal1[0].DB_MAX_OUTPUT_PORT_TYPE
+sal1[1] <= sal1[1].DB_MAX_OUTPUT_PORT_TYPE
+sal1[2] <= sal1[2].DB_MAX_OUTPUT_PORT_TYPE
+sal1[3] <= sal1[3].DB_MAX_OUTPUT_PORT_TYPE
+sal1[4] <= sal1[4].DB_MAX_OUTPUT_PORT_TYPE
+sal1[5] <= sal1[5].DB_MAX_OUTPUT_PORT_TYPE
+sal1[6] <= sal1[6].DB_MAX_OUTPUT_PORT_TYPE
+sal1[7] <= sal1[7].DB_MAX_OUTPUT_PORT_TYPE
+sal2[0] <= sal2[0].DB_MAX_OUTPUT_PORT_TYPE
+sal2[1] <= sal2[1].DB_MAX_OUTPUT_PORT_TYPE
+sal2[2] <= sal2[2].DB_MAX_OUTPUT_PORT_TYPE
+sal2[3] <= sal2[3].DB_MAX_OUTPUT_PORT_TYPE
+sal2[4] <= sal2[4].DB_MAX_OUTPUT_PORT_TYPE
+sal2[5] <= sal2[5].DB_MAX_OUTPUT_PORT_TYPE
+sal2[6] <= sal2[6].DB_MAX_OUTPUT_PORT_TYPE
+sal2[7] <= sal2[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

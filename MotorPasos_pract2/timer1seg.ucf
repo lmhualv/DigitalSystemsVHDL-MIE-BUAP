@@ -1,0 +1,16 @@
+
+
+NET "clk50MHz" LOC = "C9" | IOSTANDARD = LVCMOS25;
+NET "clk50MHz" PERIOD = 20.0ns HIGH 40%;
+NET "reset" LOC = "K17";
+NET "reset" CLOCK_DEDICATED_ROUTE = FALSE;
+ 
+
+##primero para pruebas
+NET "MotorPasos[3]" LOC = "F11";
+NET "MotorPasos[2]" LOC = "E11";
+NET "MotorPasos[1]" LOC = "E12";
+NET "MotorPasos[0]" LOC = "F12";
+NET "modo_m[2]" LOC = "H18";
+NET "modo_m[1]" LOC = "L14";
+NET "modo_m[0]" LOC = "L13";

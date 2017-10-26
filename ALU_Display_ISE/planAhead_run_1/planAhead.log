@@ -1,0 +1,143 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Oct 07 11:42:18 2017
+# Process ID: 3396
+# Log file: C:/SisDig/ALU_Display_ISE/planAhead_run_1/planAhead.log
+# Journal file: C:/SisDig/ALU_Display_ISE/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/SisDig/ALU_Display_ISE/pa.fromNetlist.tcl
+# create_project -name ALU_Display_ISE -dir "C:/SisDig/ALU_Display_ISE/planAhead_run_1" -part xc6slx16csg324-3
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/SisDig/ALU_Display_ISE/comp_top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/SisDig/ALU_Display_ISE} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "comp_top.ucf" [current_fileset -constrset]
+Adding file 'C:/SisDig/ALU_Display_ISE/comp_top.ucf' to fileset 'constrs_1'
+# add_files [list {comp_top.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-3
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design comp_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to comp_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file comp_top.edif ...
+ngc2edif: Total memory usage is 78040 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/ALU_Display_ISE.data/cache/comp_top_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/ALU_Display_ISE.data/cache/comp_top_ngc_zx.edif]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/SisDig/ALU_Display_ISE/comp_top.ucf]
+Finished Parsing UCF File [C:/SisDig/ALU_Display_ISE/comp_top.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 59d74d5e
+link_design: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 577.707 ; gain = 146.074
+startgroup
+set_property package_pin T5 [get_ports {a_top[3]}]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports {a_top[2]}]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports {a_top[1]}]
+endgroup
+startgroup
+set_property package_pin N8 [get_ports {a_top[0]}]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports {an[3]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {an[2]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {an[1]}]
+endgroup
+startgroup
+set_property package_pin N16 [get_ports {an[3]}]
+endgroup
+startgroup
+set_property package_pin N15 [get_ports {an[2]}]
+endgroup
+startgroup
+set_property package_pin P18 [get_ports {an[1]}]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports {an[0]}]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports {b_top[3]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {b_top[2]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {b_top[1]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {b_top[1]}]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports {b_top[0]}]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports {op_top[1]}]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports {op_top[0]}]
+endgroup
+startgroup
+set_property package_pin T17 [get_ports {seg_m[7]}]
+endgroup
+startgroup
+set_property package_pin T18 [get_ports {seg_m[6]}]
+endgroup
+startgroup
+set_property package_pin U17 [get_ports {seg_m[5]}]
+endgroup
+startgroup
+set_property package_pin U18 [get_ports {seg_m[4]}]
+endgroup
+startgroup
+set_property package_pin M14 [get_ports {seg_m[3]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {seg_m[2]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {seg_m[1]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {seg_m[0]}]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/SisDig/ALU_Display_ISE\planAhead_pid3396.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat Oct 07 11:47:54 2017...
+INFO: [Common 17-83] Releasing license: PlanAhead

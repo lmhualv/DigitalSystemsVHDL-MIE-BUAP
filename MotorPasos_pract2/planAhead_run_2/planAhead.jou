@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Oct 14 09:44:53 2017
+# Process ID: 6024
+# Log file: C:/SisDig/Cont_1Hz_ISE/planAhead_run_2/planAhead.log
+# Journal file: C:/SisDig/Cont_1Hz_ISE/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/SisDig/Cont_1Hz_ISE/pa.fromNetlist.tcl
+startgroup
+set_property package_pin V10 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin U16 [get_ports clk1s]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports rst]
+endgroup
+save_constraints

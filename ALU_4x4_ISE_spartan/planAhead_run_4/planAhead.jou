@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Oct 07 09:47:43 2017
+# Process ID: 5400
+# Log file: C:/SisDig/ALU_4x4_ISE_spartan/planAhead_run_4/planAhead.log
+# Journal file: C:/SisDig/ALU_4x4_ISE_spartan/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/SisDig/ALU_4x4_ISE_spartan/pa.fromNetlist.tcl
+startgroup
+set_property package_pin N17 [get_ports {a[3]}]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports {a[2]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {a[1]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {a[0]}]
+endgroup
+startgroup
+set_property package_pin D18 [get_ports {b[3]}]
+endgroup
+startgroup
+set_property package_pin V4 [get_ports {b[2]}]
+endgroup
+startgroup
+set_property package_pin H13 [get_ports {b[1]}]
+endgroup
+startgroup
+set_property package_pin K17 [get_ports {b[0]}]
+endgroup
+startgroup
+set_property package_pin K18 [get_ports {op[1]}]
+endgroup
+startgroup
+set_property package_pin G18 [get_ports {op[0]}]
+endgroup
+startgroup
+set_property package_pin F11 [get_ports {res[3]}]
+endgroup
+startgroup
+set_property package_pin E11 [get_ports {res[2]}]
+endgroup
+startgroup
+set_property package_pin E12 [get_ports {res[1]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {res[0]}]
+endgroup
+save_constraints

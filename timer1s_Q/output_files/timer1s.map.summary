@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sat Oct 14 10:12:14 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : timer1s
+Top-level Entity Name : timer1s
+Family : MAX 10
+Total logic elements : 56
+    Total combinational functions : 56
+    Dedicated logic registers : 34
+Total registers : 34
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

@@ -1,0 +1,6 @@
+AR timer1seg behavioral "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotoraPaso_MEF_I/timer1seg.vhd" sub00/vhpl01 1508989847
+AR motor behavioral "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotoraPaso_MEF_I/motor.vhd" sub00/vhpl03 1508989849
+EN motor NULL "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotoraPaso_MEF_I/motor.vhd" sub00/vhpl02 1508989848
+AR top_motor behavioral "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotoraPaso_MEF_I/top_motor.vhd" sub00/vhpl05 1508989851
+EN top_motor NULL "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotoraPaso_MEF_I/top_motor.vhd" sub00/vhpl04 1508989850
+EN timer1seg NULL "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/MotoraPaso_MEF_I/timer1seg.vhd" sub00/vhpl00 1508989846

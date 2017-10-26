@@ -1,0 +1,12 @@
+I/O Assignment Analysis Status : Successful - Sat Oct 14 10:15:47 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : timer1s
+Top-level Entity Name : timer1s
+Family : MAX 10
+Device : 10M50DAF484C6GES
+Timing Models : Preliminary
+Total pins : 3 / 360 ( < 1 % )
+Total virtual pins : 0
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )
