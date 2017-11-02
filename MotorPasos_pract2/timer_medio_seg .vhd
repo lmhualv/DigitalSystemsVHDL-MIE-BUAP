@@ -21,7 +21,8 @@ process(rst, clk)
 	if (rst='1') then
 		cuenta <= 0;
 	elsif (clk'event and clk='1') then
-		if (cuenta=12999999) then
+		--if (cuenta=12999999) then --como medio segundo es muy rapido, se optó por mas lento
+		if (cuenta=99999999) then 
 			cuenta <= 0;
 			i_clk <= '1';
 		else 

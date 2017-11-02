@@ -15,22 +15,23 @@ NET "clk50MHz" PERIOD = 20 ns HIGH 40 %;
 
 # ==== Discrete LEDs (LED) ====
 # These are shared connections with the FX2 connector
-NET "MotorPasos[0]" LOC = F12;
-NET "MotorPasos[0]" IOSTANDARD = LVTTL;
-NET "MotorPasos[0]" DRIVE = 8;
-NET "MotorPasos[0]" SLEW = SLOW;
-NET "MotorPasos[1]" LOC = E12;
-NET "MotorPasos[1]" IOSTANDARD = LVTTL;
-NET "MotorPasos[1]" DRIVE = 8;
-NET "MotorPasos[1]" SLEW = SLOW;
-NET "MotorPasos[2]" LOC = E11;
-NET "MotorPasos[2]" IOSTANDARD = LVTTL;
-NET "MotorPasos[2]" DRIVE = 8;
-NET "MotorPasos[2]" SLEW = SLOW;
-NET "MotorPasos[3]" LOC = F11;
-NET "MotorPasos[3]" IOSTANDARD = LVTTL;
-NET "MotorPasos[3]" DRIVE = 8;
-NET "MotorPasos[3]" SLEW = SLOW;
+#CONSTRAINTS DE PRUEBA
+#NET "MotorPasos[0]" LOC = F12;
+#NET "MotorPasos[0]" IOSTANDARD = LVTTL;
+#NET "MotorPasos[0]" DRIVE = 8;
+#NET "MotorPasos[0]" SLEW = SLOW;
+#NET "MotorPasos[1]" LOC = E12;
+#NET "MotorPasos[1]" IOSTANDARD = LVTTL;
+#NET "MotorPasos[1]" DRIVE = 8;
+#NET "MotorPasos[1]" SLEW = SLOW;
+#NET "MotorPasos[2]" LOC = E11;
+#NET "MotorPasos[2]" IOSTANDARD = LVTTL;
+#NET "MotorPasos[2]" DRIVE = 8;
+#NET "MotorPasos[2]" SLEW = SLOW;
+#NET "MotorPasos[3]" LOC = F11;
+#NET "MotorPasos[3]" IOSTANDARD = LVTTL;
+#NET "MotorPasos[3]" DRIVE = 8;
+#NET "MotorPasos[3]" SLEW = SLOW;
 
 # ==== Slide Switches (SW) ====
 NET "modo_m[0]" LOC = L13;
@@ -48,3 +49,9 @@ NET "modo_m[2]" LOC = H18;
 
 NET "modo_m[2]" IOSTANDARD = LVTTL;
 NET "modo_m[2]" PULLUP;
+
+##salidas nuevas
+NET "MotorPasos[3]" LOC = "B4" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;
+NET "MotorPasos[2]" LOC = "A4" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;
+NET "MotorPasos[1]" LOC = "D5" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;
+NET "MotorPasos[0]" LOC = "C5" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;
