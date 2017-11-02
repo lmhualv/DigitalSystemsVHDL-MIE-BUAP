@@ -1,7 +1,0 @@
-xst -intstyle ise -ifn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/timer1seg_ISE/timer1seg.xst" -ofn "C:/Users/Ing. Luis M. Huesca/Desktop/masters/SisDig/timer1seg_ISE/timer1seg.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 "timer1seg.ngc" timer1seg.ngd  
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 "timer1seg.ngc" timer1seg.ngd  
-map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o timer1seg_map.ncd timer1seg.ngd timer1seg.pcf 
-par -w -intstyle ise -ol high -t 1 timer1seg_map.ncd timer1seg.ncd timer1seg.pcf 
-trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml timer1seg.twx timer1seg.ncd -o timer1seg.twr timer1seg.pcf -ucf spartan3e.ucf 
-bitgen -intstyle ise -f timer1seg.ut timer1seg.ncd 

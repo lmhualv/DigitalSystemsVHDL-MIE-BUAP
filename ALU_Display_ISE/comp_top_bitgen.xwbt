@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\SisDig\ALU_Display_ISE\comp_top.ncd
-OUTFILE=C:\SisDig\ALU_Display_ISE\comp_top.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=C:\SisDig\ALU_Display_ISE
-LICENSE=WebPack
-USER_INFO=__0_0_0

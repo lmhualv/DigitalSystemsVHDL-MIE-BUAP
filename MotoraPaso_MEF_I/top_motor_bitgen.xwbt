@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Ing. Luis M. Huesca\Desktop\masters\SisDig\MotoraPaso_MEF_I\top_motor.ncd
-OUTFILE=C:\Users\Ing. Luis M. Huesca\Desktop\masters\SisDig\MotoraPaso_MEF_I\top_motor.bit
-FAMILY=Spartan3E
-PART=xc3s500e-4fg320
-WORKINGDIR=C:\Users\Ing. Luis M. Huesca\Desktop\masters\SisDig\MotoraPaso_MEF_I
-LICENSE=WebPack
-USER_INFO=__0_0_0

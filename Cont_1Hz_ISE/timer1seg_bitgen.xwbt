@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\SisDig\Cont_1Hz_ISE\timer1seg.ncd
-OUTFILE=C:\SisDig\Cont_1Hz_ISE\timer1seg.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=C:\SisDig\Cont_1Hz_ISE
-LICENSE=WebPack
-USER_INFO=__0_0_0

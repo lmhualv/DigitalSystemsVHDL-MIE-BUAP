@@ -1,4 +1,0 @@
-vhdl work "timer_medio_seg .vhd"
-vhdl work "timer1seg.vhd"
-vhdl work "motor.vhd"
-vhdl work "top_motor.vhd"
