@@ -1,8 +1,0 @@
-V3 3
-FL "//vmware-host/shared folders/luishuesca/Documents/Masters/1st/Sistemas Digitales I/Practs/alu8x8_p.vhd" 2017/10/11.22:27:37 P.20131013
-EN work/alu8x8_p 1507778860 \
-      FL "//vmware-host/shared folders/luishuesca/Documents/Masters/1st/Sistemas Digitales I/Practs/alu8x8_p.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/alu8x8_p/arch 1507778861 \
-      FL "//vmware-host/shared folders/luishuesca/Documents/Masters/1st/Sistemas Digitales I/Practs/alu8x8_p.vhd" \
-      EN work/alu8x8_p 1507778860
